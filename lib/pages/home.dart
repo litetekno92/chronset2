@@ -260,8 +260,8 @@ class ItemClick extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: FadeInImage.assetNetwork(
-                  width: 150.0,
-                  height: 100.0,
+                  width: 300.0,
+                  height: 150.0,
                   placeholder: 'images/placeholder.png',
                   image: 'https://picsum.photos/250?image=9',
                 ),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 final List<String> titleList = [
   "Éjecté des Domaines : Mamour Diallo vers la Crei ?",
   "MODOU DIAGNE FADA NOUVEAU DIRECTEUR GÉNÉRAL DE LA SONACOS",
-  "La Caisse des dépôts et consignations lance sa «Tour des Mamelles» à 38 milliards Fcfa",
+  "La Caisse des dépôts et consignations lance sa «Tour des Mamelles» à 38 milliards Fcfa. La Caisse des dépôts et consignations lance sa «Tour des Mamelles» à 38 milliards Fcfa",
   "Communiqué du Conseil des ministres du 24 avril 2019",
   "HISSEIN HABRE débouté par la cour d’appel.",
   "BABACAR GAYE N’EST PLUS PORTE PAROLE DU PDS SUR DÉCISION DE MAÎTRE ABDOULAYE WADE."
