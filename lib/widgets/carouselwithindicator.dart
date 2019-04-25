@@ -1,6 +1,15 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
+final List<String> titleList = [
+  "Éjecté des Domaines : Mamour Diallo vers la Crei ?",
+  "MODOU DIAGNE FADA NOUVEAU DIRECTEUR GÉNÉRAL DE LA SONACOS",
+  "La Caisse des dépôts et consignations lance sa «Tour des Mamelles» à 38 milliards Fcfa",
+  "Communiqué du Conseil des ministres du 24 avril 2019",
+  "HISSEIN HABRE débouté par la cour d’appel.",
+  "BABACAR GAYE N’EST PLUS PORTE PAROLE DU PDS SUR DÉCISION DE MAÎTRE ABDOULAYE WADE."
+];
+
 final List<String> imgList = [
   'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
   'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
@@ -37,17 +46,19 @@ final List child = map<Widget>(
                 ),
               ),
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              child:
-              InkWell( 
-              onTap: (){},
-              child: Text(
-                'No. $index image',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
+              child: InkWell(
+                onTap: () {},
+                child: Text(
+                  titleList[index],
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  //              'No. $index image',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 10.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
               ),
             ),
           ),

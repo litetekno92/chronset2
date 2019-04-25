@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
                  padding: EdgeInsets.symmetric(vertical: 15.0),
                  child: Column(children: [
-                   Text('Carousel With Indecator'),
+                   Text('À la Une'),
                    CarouselWithIndicator(),
                  ])),
             Center(child: ItemClick()),
