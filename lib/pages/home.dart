@@ -45,6 +45,14 @@ class _MyHomePageState extends State<MyHomePage> {
               return [
                 PopupMenuItem(
                   child: IconButton(
+                    icon: Icon(Icons.notifications),
+                    onPressed: () {
+                      clicked(context, "Notifications");
+                    },
+                  ),
+                ),
+                PopupMenuItem(
+                  child: IconButton(
                     icon: Icon(Icons.email),
                     onPressed: () {
                       clicked(context, "Email sent");
@@ -255,12 +263,12 @@ class ItemClick extends StatelessWidget {
         child: Card(
           elevation: 8.0,
           child: Padding(
-            padding: const EdgeInsets.all(4.0),
+            padding: const EdgeInsets.all(8.0),
             child: Row(children: [
               Expanded(
                 flex: 2,
                 child: FadeInImage.assetNetwork(
-                  width: 300.0,
+                  width: 100.0,
                   height: 150.0,
                   placeholder: 'images/placeholder.png',
                   image: 'https://picsum.photos/250?image=9',
@@ -268,6 +276,8 @@ class ItemClick extends StatelessWidget {
               ),
               Expanded(
                 flex: 8,
+                child: Container(
+                  padding: EdgeInsets.only(top:4.0),
                 child: ListTile(
                   title: Text('Voici des plus gros titres encores. Voila !res',
                       style: TextStyle(
@@ -280,6 +290,7 @@ class ItemClick extends StatelessWidget {
                           color: Colors.black.withOpacity(0.6),
                           fontSize: 10.0,
                           fontStyle: FontStyle.normal)),
+                ),
                 ),
               ),
             ]),
